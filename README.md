@@ -33,7 +33,14 @@ For detailed instructions on how to install Kmail on your host machine , There a
        - **Database user name** : root
        - **Database password** :
 
-8- Make sure to re-fill usermail and password Under **SMTP Settings**, - domain: mail.mykmail.io - username: [email] - password: [password] - SMTP: 465 - IMAP: 993 - POP3: 995
+8- Make sure to re-fill usermail and password Under **SMTP Settings** :
+
+    - domain: mail.mykmail.io
+    - username: [email]
+    - password: [password]
+    - SMTP: 465
+    - IMAP: 993
+    - POP3: 995
 
 9- **Update Config** then Press **Continue** Then **Initialize database** .
 
@@ -75,7 +82,14 @@ For detailed instructions on how to install Kmail on your host machine , There a
        - **Database user name** : root
        - **Database password** : example
 
-12- Make sure to re-fill usermail and password Under **SMTP Settings** - domain: mail.mykmail.io - username: [email] - password: [password] - SMTP: 465 - IMAP: 993 - POP3: 995
+12- Make sure to re-fill usermail and password Under **SMTP Settings** :
+
+    - domain: mail.mykmail.io
+    - username: [email]
+    - password: [password]
+    - SMTP: 465
+    - IMAP: 993
+    - POP3: 995
 
 13- **Update Config** then Press **Continue** Then **Initialize database** .
 
