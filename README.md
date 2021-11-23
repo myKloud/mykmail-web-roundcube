@@ -16,15 +16,15 @@ For detailed instructions on how to install Kmail on your host machine , There a
 
   1- Make sure to intsall **Xampp** with **(Apache & Mysql)** build-in , Check here [Xampp](https://www.apachefriends.org/index.html)
 
-  2- clone the repository and copy it inside htdocs folder inside /xampp dir .
+  2- Clone the Repository and copy it inside **htdocs** Folder at C:\xampp .
 
   3- Open **Xampp.app** and run the Apache server with Mysql server .
 
   4- Open your browser and track **localhost/{repository folder name}/installer**
 
-  5- Open your code editor and search for **$config['enable_installer']** and set it as true .
+  5- Open your code editor inside Repository Folder and search for **$config['enable_installer']** and set it as **true** .
 
-  6- Refresh the browser page , Now you can re-config your kmail , make sure that you have **kmail** database set at your mysql workbench.
+  6- Refresh the browser page , Now you can re-config your kmail , make sure that you have **kmail** database set at your mysql workbench(host).
 
   7- Go to Create config , Under **Database setup** re-set :
 
@@ -33,74 +33,51 @@ For detailed instructions on how to install Kmail on your host machine , There a
        - **Database user name** : root
        - **Database password** :
 
-  8- Make sure to re-fill usermail and password Under **SMTP Settings** as khaled.kmail.io , something.
+  8- Make sure to re-fill usermail and password Under **SMTP Settings** as **khaled.kmail.io** , **something** .
 
   9- **Update Config** then Press **Continue** Then **Initialize database** .
 
-  10- Here we Go , now Open the Browser At **localhost/repository folder name** .
+  10- Here we Go , now Open the Browser At **localhost/"repository folder name"** .
 
   11- Have fun Using Kmail :) .
 
-## BROWSER SUPPORT
+- Using Docker :
 
-Roundcube uses jQuery 3.x (and other libs) for its client and therefore
-inherits the browser support from there. This currently includes:
+  1- Make sure to intsall **Docker** , Check here [Docker](https://docs.docker.com/get-docker/)
 
-- Chrome: (Current - 1) and Current
-- Edge: (Current - 1) and Current
-- Firefox: (Current - 1) and Current, ESR
-- Internet Explorer: 11+
-- Safari: (Current - 1) and Current
-- Opera: Current
+  2- Clone the Repository .
 
-## LICENSE
+  3- Inside the **Repository** make sure that **Dockfile** and **docker-compose.yml** are there and open bash inside it .
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License (**with exceptions
-for skins & plugins**) as published by the Free Software Foundation,
-either version 3 of the License, or (at your option) any later version.
+  4- Run this **command** :
+  **docker-compose up -d**
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+  5- When finish , Open your browser at localhost:80 and check if its work .
 
-You should have received a copy of the GNU General Public License
-along with this program. If not, see [www.gnu.org/licenses/][gpl].
+  6- If its Not working , We need to setup the database , Open the Browser at localhost:8080 , it will open Admier login
+  Server : db
+  Username : root
+  password : example
 
-This file forms part of the Roundcube Webmail Software for which the
-following exception is added: Plugins and Skins which merely make
-function calls to the Roundcube Webmail Software, and for that purpose
-include it by reference shall not be considered modifications of
-the software.
+  7- After login , make sure that there is **kmail** database .
 
-If you wish to use this file in another project or create a modified
-version that will not be part of the Roundcube Webmail Software, you
-may remove the exception above and use this source code under the
-original version of the license.
+  4- Open your browser at **localhost/installer**
 
-For more details about licensing and the exceptions for skins and plugins
-see [roundcube.net/license][license]
+  5- Open your code editor inside Repository Folder and search for **$config['enable_installer']** and set it as **true** .
 
-## CONTRIBUTION
+  6- Refresh the browser page , Now you can re-config your kmail .
 
-Want to help make Roundcube the best webmail solution ever?
-Roundcube is open source software. Our developers and contributors all
-are volunteers and we're always looking for new additions and resources.
-For more information visit [roundcube.net/contribute][contrib]
+  7- Go to Create config , Under **Database setup** re-set :
 
-## CONTACT
+       - **Database Server** : db
+       - **Database name** : kmail
+       - **Database user name** : root
+       - **Database password** : example
 
-For bug reports or feature requests please refer to the tracking system
-at [Github][githubissues] or subscribe to our mailing list.
-See [roundcube.net/support][support] for details.
+  8- Make sure to re-fill usermail and password Under **SMTP Settings** as **khaled.kmail.io** , **something** .
 
-You're always welcome to send a message to the project admin:
-hello(at)roundcube(dot)net
+  9- **Update Config** then Press **Continue** Then **Initialize database** .
 
-[iloha]: https://sourceforge.net/projects/ilohamail/
-[gpl]: https://www.gnu.org/licenses/
-[license]: https://roundcube.net/license
-[contrib]: https://roundcube.net/contribute
-[support]: https://roundcube.net/support
-[githubissues]: https://github.com/roundcube/roundcubemail/issues
+  10- Here we Go , now Open the Browser At **localhost/** .
+
+  11- Have fun Using Kmail :) .
