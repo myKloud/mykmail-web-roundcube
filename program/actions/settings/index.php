@@ -346,9 +346,8 @@ class rcmail_action_settings_index extends rcmail_action
                             $blocks['skin']['options'][$skin]['content'] = html::label(['class' => 'skinselection'],
                                 html::span('skinitem', $input->show($config['skin'], ['value' => $skin, 'id' => $field_id.$skin])) .
                                 html::span('skinitem', $img) .
-                                html::span('skinitem', html::span('skinname', rcube::Q($skinname)) . html::br() .
-                                    html::span('skinauthor', $author_link ? 'by ' . $author_link : '') . html::br() .
-                                    html::span('skinlicense', $license_link ? $rcmail->gettext('license').':&nbsp;' . $license_link : ''))
+                                html::span('skinitem', html::span('skinname', rcube::Q($skinname)) . html::br()
+                                    )
                             );
                         }
                     }
