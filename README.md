@@ -1,34 +1,36 @@
-Roundcube Webmail 
-=================
-[roundcube.net](https://roundcube.net)
+# Kmail
 
-[![Tests Status](https://github.com/roundcube/roundcubemail/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/roundcube/roundcubemail/actions/workflows/tests.yml)
+[MyKloud.net](https://mykloud.io/)
 
-INTRODUCTION
-------------
-Roundcube Webmail is a browser-based multilingual IMAP client with an
-application-like user interface. It provides full functionality you expect
-from an email client, including MIME support, address book, folder management,
-message searching and spell checking. Roundcube Webmail is written in PHP and
-requires the MySQL, PostgreSQL or SQLite database. With its plugin API it is
-easily extendable and the user interface is fully customizable using skins.
+## INTRODUCTION
 
-The code designed to run on a webserver is mainly written in PHP and Javascript.
-It includes a custom framework with an IMAP library derived from [IlohaMail][iloha]
-and requires a set of external libraries (see composer.json and jsdeps.json files).
+Secure Email service powered by Web3 technologies where messages and attachments are encrypted end-to-end and stored on the myKloud decentralized network
+Integrates quickly and seamlessly with any mail client you’re currently using including Outlook and Apple Mail
+And for extra security, you can use our native client on Android & Web .
 
+## INSTALLATION
 
-INSTALLATION
-------------
-For detailed instructions on how to install Roundcube webmail on your server,
-please refer to the INSTALL document in the same directory as this document.
+For detailed instructions on how to install Kmail on your host , There are two way to install Kmail :
 
-If you're updating an older version of Roundcube please follow the steps
-described in the UPGRADING file.
+- Using Xampp(Apache and Mysql) :
+  1- Make sure to intsall **Xampp** with **(Apache & Mysql)** build-in , Check here [Xampp](https://www.apachefriends.org/index.html)
+  2- clone the repository and copy it inside htdocs folder inside /xampp dir .
+  3- Open **Xampp.app** and run the Apache server with Mysql server .
+  4- Open your browser and track **localhost/{repository folder name}/installer**
+  5- Open your code editor and search for **$config['enable_installer']** and set it as true .
+  6- Refresh the browser page , Now you can re-config your kmail , make sure that you have **kmail** database set at your mysql workbench
+  7- Go to Create config , Under **Database setup** re-set :
+  **Database Server** : localhost
+  **Database name** : kmail
+  **Database user name** : root
+  **Database password** :
+  8- Make sure to re-fill usermail and password Under **SMTP Settings** as khaled.kmail.io , something
+  9- **Update Config** then Press **Continue** Then **Initialize database** .
+  10- Here we Go , now Open the Browser At **localhost/repository folder name** .
+  11- Have fun Using Kmail :) .
 
+## BROWSER SUPPORT
 
-BROWSER SUPPORT
----------------
 Roundcube uses jQuery 3.x (and other libs) for its client and therefore
 inherits the browser support from there. This currently includes:
 
@@ -39,9 +41,8 @@ inherits the browser support from there. This currently includes:
 - Safari: (Current - 1) and Current
 - Opera: Current
 
+## LICENSE
 
-LICENSE
--------
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License (**with exceptions
 for skins & plugins**) as published by the Free Software Foundation,
@@ -69,17 +70,15 @@ original version of the license.
 For more details about licensing and the exceptions for skins and plugins
 see [roundcube.net/license][license]
 
+## CONTRIBUTION
 
-CONTRIBUTION
-------------
 Want to help make Roundcube the best webmail solution ever?
 Roundcube is open source software. Our developers and contributors all
 are volunteers and we're always looking for new additions and resources.
 For more information visit [roundcube.net/contribute][contrib]
 
+## CONTACT
 
-CONTACT
--------
 For bug reports or feature requests please refer to the tracking system
 at [Github][githubissues] or subscribe to our mailing list.
 See [roundcube.net/support][support] for details.
@@ -87,10 +86,9 @@ See [roundcube.net/support][support] for details.
 You're always welcome to send a message to the project admin:
 hello(at)roundcube(dot)net
 
-
-[iloha]:        https://sourceforge.net/projects/ilohamail/
-[gpl]:          https://www.gnu.org/licenses/
-[license]:      https://roundcube.net/license
-[contrib]:      https://roundcube.net/contribute
-[support]:      https://roundcube.net/support
+[iloha]: https://sourceforge.net/projects/ilohamail/
+[gpl]: https://www.gnu.org/licenses/
+[license]: https://roundcube.net/license
+[contrib]: https://roundcube.net/contribute
+[support]: https://roundcube.net/support
 [githubissues]: https://github.com/roundcube/roundcubemail/issues
