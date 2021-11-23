@@ -10,23 +10,35 @@ And for extra security, you can use our native client on Android & Web .
 
 ## INSTALLATION
 
-For detailed instructions on how to install Kmail on your host , There are two way to install Kmail :
+For detailed instructions on how to install Kmail on your host machine , There are two ways to install Kmail :
 
 - Using Xampp(Apache and Mysql) :
+
   1- Make sure to intsall **Xampp** with **(Apache & Mysql)** build-in , Check here [Xampp](https://www.apachefriends.org/index.html)
+
   2- clone the repository and copy it inside htdocs folder inside /xampp dir .
+
   3- Open **Xampp.app** and run the Apache server with Mysql server .
+
   4- Open your browser and track **localhost/{repository folder name}/installer**
+
   5- Open your code editor and search for **$config['enable_installer']** and set it as true .
-  6- Refresh the browser page , Now you can re-config your kmail , make sure that you have **kmail** database set at your mysql workbench
+
+  6- Refresh the browser page , Now you can re-config your kmail , make sure that you have **kmail** database set at your mysql workbench.
+
   7- Go to Create config , Under **Database setup** re-set :
-  **Database Server** : localhost
-  **Database name** : kmail
-  **Database user name** : root
-  **Database password** :
-  8- Make sure to re-fill usermail and password Under **SMTP Settings** as khaled.kmail.io , something
+
+       - **Database Server** : localhost
+       - **Database name** : kmail
+       - **Database user name** : root
+       - **Database password** :
+
+  8- Make sure to re-fill usermail and password Under **SMTP Settings** as khaled.kmail.io , something.
+
   9- **Update Config** then Press **Continue** Then **Initialize database** .
+
   10- Here we Go , now Open the Browser At **localhost/repository folder name** .
+
   11- Have fun Using Kmail :) .
 
 ## BROWSER SUPPORT
