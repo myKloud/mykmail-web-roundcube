@@ -62,23 +62,23 @@ For detailed instructions on how to install Kmail on your host machine , There a
 
   7- After login , make sure that there is **kmail** database .
 
-  4- Open your browser at **localhost/installer**
+  8- Open your browser at **localhost/installer**
 
-  5- Open your code editor inside Repository Folder and search for **$config['enable_installer']** and set it as **true** .
+  9- Open your code editor inside Repository Folder and search for **$config['enable_installer']** and set it as **true** .
 
-  6- Refresh the browser page , Now you can re-config your kmail .
+  10- Refresh the browser page , Now you can re-config your kmail .
 
-  7- Go to Create config , Under **Database setup** re-set :
+  11- Go to Create config , Under **Database setup** re-set :
 
        - **Database Server** : db
        - **Database name** : kmail
        - **Database user name** : root
        - **Database password** : example
 
-  8- Make sure to re-fill usermail and password Under **SMTP Settings** as **khaled.kmail.io** , **something** .
+  12- Make sure to re-fill usermail and password Under **SMTP Settings** as **khaled.kmail.io** , **something** .
 
-  9- **Update Config** then Press **Continue** Then **Initialize database** .
+  13- **Update Config** then Press **Continue** Then **Initialize database** .
 
-  10- Here we Go , now Open the Browser At **localhost/** .
+  14- Here we Go , now Open the Browser At **localhost/** .
 
-  11- Have fun Using Kmail :) .
+  15- Have fun Using Kmail :) .
