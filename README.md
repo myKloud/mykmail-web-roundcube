@@ -54,10 +54,7 @@ For detailed instructions on how to install Kmail on your host machine , There a
 
   5- When finish , Open your browser at localhost:80 and check if its work .
 
-  6- If its Not working , We need to setup the database , Open the Browser at localhost:8080 , it will open Admier login
-  Server : db
-  Username : root
-  password : example
+  6- If its Not working , We need to setup the database , Open the Browser at localhost:8080 , it will open Admier login - Server : db - Username : root - password : example
 
   7- After login , make sure that there is **kmail** database .
 
