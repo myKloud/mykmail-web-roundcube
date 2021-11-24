@@ -10,3 +10,14 @@
 [23-Nov-2021 11:48:12 +0000]: <95384829> PHP Error: config.inc.php was not found. (POST /?_task=mail&_action=refresh)
 [23-Nov-2021 11:48:26 +0000]: <95384829> DB Error: SQLSTATE[HY000] [2002] No such file or directory in /var/www/html/program/lib/Roundcube/rcube_db.php on line 194 (GET /)
 [23-Nov-2021 11:48:26 +0000]: <95384829> PHP Error: config.inc.php was not found. (GET /)
+[24-Nov-2021 09:01:31 +0000]: <d5d29f1c> DB Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/program/lib/Roundcube/rcube_db.php on line 194 (GET /?_task=logout&_token=UtUa25ej0Kfl1yGtZx2H1267NEAEM0mQ)
+[24-Nov-2021 09:01:31 +0000]: <d5d29f1c> DB Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution (GET /?_task=logout&_token=UtUa25ej0Kfl1yGtZx2H1267NEAEM0mQ)
+[24-Nov-2021 09:01:39 +0000]: <d5d29f1c> DB Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/program/lib/Roundcube/rcube_db.php on line 194 (GET /)
+[24-Nov-2021 09:01:40 +0000]: <d5d29f1c> DB Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution (GET /)
+[24-Nov-2021 10:52:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function show() on null in /var/www/html/program/actions/settings/index.php:372
+Stack trace:
+#0 /var/www/html/program/actions/settings/prefs_edit.php(38): rcmail_action_settings_index::user_prefs('general')
+#1 /var/www/html/program/include/rcmail.php(275): rcmail_action_settings_prefs_edit->run(Array)
+#2 /var/www/html/index.php(283): rcmail->action_handler()
+#3 {main}
+  thrown in /var/www/html/program/actions/settings/index.php on line 372

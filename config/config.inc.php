@@ -108,7 +108,7 @@ $config['smtp_port'] = 465;
 
 // PLEASE DO NOT LINK TO THE ROUNDCUBE.NET WEBSITE HERE!
 
-$config['support_url'] = 'http://kmail.com';
+$config['support_url'] = 'https://mykloud.io';
 
 // This key is used for encrypting purposes, like storing of imap password
 

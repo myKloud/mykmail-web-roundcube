@@ -130,7 +130,7 @@ class rcmail_action_settings_index extends rcmail_action
                 $blocks = [
                     'main'    => ['name' => rcube::Q($rcmail->gettext('mainoptions'))],
                     'skin'    => ['name' => rcube::Q($rcmail->gettext('skin'))],
-                    'browser' => ['name' => rcube::Q($rcmail->gettext('browseroptions'))],
+                    // 'browser' => ['name' => rcube::Q($rcmail->gettext('browseroptions'))],
                     'advanced'=> ['name' => rcube::Q($rcmail->gettext('advancedoptions'))],
                 ];
 
@@ -343,12 +343,12 @@ class rcmail_action_settings_index extends rcmail_action
                                     'onerror' => "this.onerror = null; this.src = 'data:image/gif;base64," . rcmail_output::BLANK_GIF ."';",
                             ]);
 
-                            $blocks['skin']['options'][$skin]['content'] = html::label(['class' => 'skinselection'],
-                                html::span('skinitem', $input->show($config['skin'], ['value' => $skin, 'id' => $field_id.$skin])) .
-                                html::span('skinitem', $img) .
-                                html::span('skinitem', html::span('skinname', rcube::Q($skinname)) . html::br()
-                                    )
-                            );
+                            // $blocks['skin']['options'][$skin]['content'] = html::label(['class' => 'skinselection'],
+                            //     html::span('skinitem', $input->show($config['skin'], ['value' => $skin, 'id' => $field_id.$skin])) .
+                            //     html::span('skinitem', $img) .
+                            //     html::span('skinitem', html::span('skinname', rcube::Q($skinname)) . html::br()
+                            //         )
+                            // );
                         }
                     }
                 }
@@ -367,10 +367,10 @@ class rcmail_action_settings_index extends rcmail_action
                             'value' => 1
                     ]);
 
-                    $blocks['browser']['options']['standard_windows'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('standardwindows'))),
-                        'content' => $checkbox->show($config['standard_windows']?1:0),
-                    ];
+                    // $blocks['browser']['options']['standard_windows'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('standardwindows'))),
+                    //     'content' => $checkbox->show($config['standard_windows']?1:0),
+                    // ];
                 }
 
                 if ($current) {
@@ -379,11 +379,11 @@ class rcmail_action_settings_index extends rcmail_action
                         rcmail_output::JS_OBJECT_NAME, rcube::JQ($product_name)), 'docready');
                 }
 
-                $blocks['browser']['options']['mailtoprotohandler'] = [
-                    'content' => html::a(['href' => '#', 'id' => 'mailtoprotohandler'],
-                    rcube::Q($rcmail->gettext('mailtoprotohandler'))) .
-                    html::span('mailtoprotohandler-status', ''),
-                ];
+                // $blocks['browser']['options']['mailtoprotohandler'] = [
+                //     'content' => html::a(['href' => '#', 'id' => 'mailtoprotohandler'],
+                //     rcube::Q($rcmail->gettext('mailtoprotohandler'))) .
+                //     html::span('mailtoprotohandler-status', ''),
+                // ];
 
             break;
 
