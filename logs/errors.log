@@ -21,3 +21,5 @@ Stack trace:
 #2 /var/www/html/index.php(283): rcmail->action_handler()
 #3 {main}
   thrown in /var/www/html/program/actions/settings/index.php on line 372
+[24-Nov-2021 12:30:07 +0000]: <b398f6b9> IMAP Error: Login failed for khaled@mykmail.io against localhost from 192.168.48.1. Could not connect to localhost:993: Cannot assign requested address in /var/www/html/program/lib/Roundcube/rcube_imap.php on line 211 (POST /?_task=login&_action=login)
+[24-Nov-2021 12:30:12 +0000]: <b398f6b9> IMAP Error: Login failed for khaled@mykmail.io against localhost from 192.168.48.1. Could not connect to localhost:993: Cannot assign requested address in /var/www/html/program/lib/Roundcube/rcube_imap.php on line 211 (POST /?_task=login&_action=login)

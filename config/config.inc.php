@@ -64,6 +64,7 @@ $config['db_dsnw'] = 'mysql://root:example@db/kmail';
 
 $config['default_host'] = 'ssl://mail.mykmail.io';
 
+
 // TCP port used for IMAP connections
 
 $config['default_port'] = 993;
