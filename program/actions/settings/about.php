@@ -34,7 +34,7 @@ class rcmail_action_settings_about extends rcmail_action
         $rcmail->output->set_pagetitle($rcmail->gettext('about'));
 
         $rcmail->output->add_handlers([
-                'supportlink' => [$this, 'supportlink'],
+                // 'supportlink' => [$this, 'supportlink'],
                 // 'pluginlist'  => [$this, 'plugins_list'],
                 // 'copyright'   => function() {
                 //     return 'Copyright &copy; 2005-2021, The kmail Dev Team';
