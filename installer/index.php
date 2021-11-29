@@ -166,7 +166,7 @@ include $include_steps[$RCI->step];
 </div>
 
 <div id="footer">
-  Installer by  The myKloud Team. Copyright &copy; 2022 
+  Installer by  The myKloud Team . Copyright &copy; 2022 
   
 </div>
 </body>
