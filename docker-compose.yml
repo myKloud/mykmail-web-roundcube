@@ -7,7 +7,9 @@ services:
 
  db:
     image: mysql
-    command: --default-authentication-plugin=mysql_native_password
+    command: 
+      --default-authentication-plugin=mysql_native_password
+      --init-file /data/application/init.sql
     # container_name: mysql8
     restart: always
     environment:
@@ -18,6 +20,7 @@ services:
       
     volumes:
       - datafiles:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
       
      # restart: always
     ports:
