@@ -166,8 +166,8 @@ include $include_steps[$RCI->step];
 </div>
 
 <div id="footer">
-  Installer by the Kmail Dev Team. Copyright &copy; 2008-2021 – Published under the GNU Public License;&nbsp;
-  Icons by <a href="http://famfamfam.com">famfamfam</a>
+  Installer by  The myKloud Team. Copyright &copy; 2022 
+  
 </div>
 </body>
 </html>

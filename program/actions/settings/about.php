@@ -37,7 +37,7 @@ class rcmail_action_settings_about extends rcmail_action
                 // 'supportlink' => [$this, 'supportlink'],
                 // 'pluginlist'  => [$this, 'plugins_list'],
                 // 'copyright'   => function() {
-                //     return 'Copyright &copy; 2005-2021, The kmail Dev Team';
+                //     return 'Copyright &copy; 2022, , The myKloud Team';
                 // },
                 'license' => function() {
                     return 'Secure Email service powered by Web3 technologies where messages and attachments are encrypted end-to-end and stored on the myKloud decentralized network
