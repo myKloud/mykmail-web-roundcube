@@ -64,7 +64,6 @@ $config['db_dsnw'] = 'mysql://root:example@db/kmail';
 
 $config['default_host'] = 'ssl://mail.mykmail.io';
 
-
 // TCP port used for IMAP connections
 
 $config['default_port'] = 993;
@@ -104,6 +103,18 @@ $config['smtp_server'] = 'ssl://mail.mykmail.io';
 // SMTP port. Use 25 for cleartext, 465 for Implicit TLS, or 587 for STARTTLS (default)
 
 $config['smtp_port'] = 465;
+
+// ----------------------------------
+
+// SYSTEM
+
+// ----------------------------------
+
+// THIS OPTION WILL ALLOW THE INSTALLER TO RUN AND CAN EXPOSE SENSITIVE CONFIG DATA.
+
+// ONLY ENABLE IT IF YOU'RE REALLY SURE WHAT YOU'RE DOING!
+
+$config['enable_installer'] = false;
 
 // provide an URL where a user can get support for this Roundcube installation
 

@@ -461,7 +461,7 @@ $config['redis_max_allowed_packet'] = '2M';
 
 // THIS OPTION WILL ALLOW THE INSTALLER TO RUN AND CAN EXPOSE SENSITIVE CONFIG DATA.
 // ONLY ENABLE IT IF YOU'RE REALLY SURE WHAT YOU'RE DOING!
-$config['enable_installer'] = false;
+$config['enable_installer'] = true;
 
 // don't allow these settings to be overridden by the user
 $config['dont_override'] = [];
