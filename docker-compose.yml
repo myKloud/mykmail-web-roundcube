@@ -14,8 +14,8 @@ services:
     restart: always
     environment:
       environment:
-      MYSQL_ROOT_HOST: "%"
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_HOST: ${MYSQL_ROOT_HOST}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       # MYSQL_DATABASE: kmail
       
     volumes:
@@ -24,7 +24,7 @@ services:
       
      # restart: always
     ports:
-      - 3306:3306
+      - ${MYSQL_PORT}
 
  adminer:
     image: adminer
@@ -39,15 +39,8 @@ services:
      context : . 
      dockerfile : Dockerfile
 
-  #  environment:
-  #     MYSQL_DBHOST: mysql
-  #     MYSQL_DBPORT: 3306
-  #     MYSQL_DBUSER : root
-  #     MYSQL_DBPASS : secret
-  #     MYSQL_DBNAME : kmail
-
    ports :
-     - 90:80
+     - ${APACHE_PORT}
    volumes : 
     - .:/var/www/html/
   #  depends_on : 
