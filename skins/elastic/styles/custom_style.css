@@ -1,0 +1,241 @@
+body.task-login {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #1b1616;
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 1.56;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+
+
+.mykmail_login_main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mykmail_login_logo{
+    position: absolute;
+    width: 200px!important;
+    left: 3%;
+    top : 2%;
+    margin-bottom: 20%;
+}
+
+
+
+#login-form.mykmail_login_form{
+    top: 20vh;
+    width: 95%;
+    max-width: 600px;
+    position: relative;
+    padding: 8rem;
+    background-color: white;
+    border: 1px solid gray;
+    background-color: #fff;
+    margin: auto;
+    border: 1px solid #dcdce7;
+    border-radius: 6px;
+}
+
+
+.mykmail_login_footer{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    background-color : #292d45 ;
+    display:flex;
+    justify-content: space-between;
+    padding :20px 40px;
+    align-items: center;
+
+}
+
+.mykmail_login_footer_Left{
+    display : flex;
+    flex-direction :column;
+    
+    height : 70%;
+
+}
+
+.mykmail_login_footer_Left_logo{
+    width : 220px !important;
+    margin-bottom: 4%;
+    
+
+}
+
+
+
+
+
+.mykmail_login_footer_Left_h4{
+    color : white;
+    font-size: 19px;
+    font-weight: 200;
+    margin : 0;
+
+}
+
+
+.mykmail_login_footer_Reight{
+   
+    width : 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mykmail_login_footer_Reight_up{
+  
+    display : flex;
+}
+
+.mykmail_login_footer_Reight_up_p{
+ color : white;
+ font-size: 16px;
+ line-height: 1.75;
+ font-weight: 400;
+ margin-right: 4%;
+}
+
+.mykmail_login_footer_Reight_down{
+ 
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.mykmail_login_footer_Reight_down_p{
+    color : white;
+ font-size: 16px;
+ line-height: 1.75;
+ font-weight: 400;
+ margin-right: 4%;
+ margin : 0;
+}
+
+.mykmail_login_footer_Reight_up_p_mobile{
+    display : none;
+}
+
+.task-login #layout-content.mykmail_login_main{
+    display : flex ;
+
+
+
+}
+
+
+
+
+@media screen and (max-width:375px) {
+
+    
+ .mykmail_login_form{
+    padding-top:30px;
+ 
+  }
+
+
+  #login-form.mykmail_login_form{
+    top: 20vh;
+    width: 95%;
+    max-width: 600px;
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+    margin: auto;
+    border: 1px solid #dcdce7;
+    border-radius: 6px;
+}
+
+    .mykmail_login_footer{
+        width:100%;
+        position: relative;
+        display:flex;
+        flex-direction : column;
+        padding :10px 20px;
+    }
+
+
+    .mykmail_login_footer_Left{
+        display : flex;
+        flex-direction :column;
+        justify-content:flex-start;
+        width :100%;
+    
+    }
+    
+    .mykmail_login_footer_Left_logo{
+        width : 190px !important;
+        margin-bottom: 4%;
+    }
+    
+    .mykmail_login_footer_Left_h4{
+        display :none;
+    }
+
+    .mykmail_login_footer_Reight_up_p_mobile{
+        display : block;
+        color : white;
+     font-size: 14px;
+     line-height: 1.75;
+     font-weight: 400;
+    }
+    
+    
+    .mykmail_login_footer_Reight{
+        display: flex;
+        flex-direction: column;
+       
+        width :100%;
+    
+    }
+    
+    .mykmail_login_footer_Reight_up{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        text-align: left;
+        
+
+       
+    }
+    
+    .mykmail_login_footer_Reight_up_p{
+     color : white;
+     width :100%;
+     font-size: 16px;
+     line-height: 1.75;
+     font-weight: 400;
+     margin:1% 1%;
+    }
+    
+    .mykmail_login_footer_Reight_down{
+        display : flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2%;
+    }
+    
+    .mykmail_login_footer_Reight_down_p{
+        color : white;
+     font-size: 16px;
+     line-height: 1.75;
+     font-weight: 400;
+     margin-right: 4%;
+     margin : 0 10% 0 0 ;
+    }
+
+    
+
+}

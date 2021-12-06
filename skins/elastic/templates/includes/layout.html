@@ -20,12 +20,15 @@
 	<roundcube:object name="meta" />
 	<roundcube:object name="links" />
 	<link rel="stylesheet" href="/deps/bootstrap.min.css">
+	<link rel="stylesheet" href="skins/elastic/styles/custom_style.css">
 	<roundcube:if condition="config:devel_mode" />
 		<link rel="stylesheet/less" href="/styles/styles.less">
+		<link rel="stylesheet" href="./logincss.css">
 		<roundcube:link rel="stylesheet/less" href="/styles/print.less" condition="env:action == 'print'" />
 		<script src="/deps/less.min.js" data-env="development"></script>
 	<roundcube:else />
 		<link rel="stylesheet" href="/styles/styles.css">
+		<link rel="stylesheet" href="./logincss.css">
 		<roundcube:link rel="stylesheet" href="/styles/print.css" condition="env:action == 'print'" />
 	<roundcube:endif />
 	<roundcube:if condition="env:action != 'print' && !config:devel_mode" />

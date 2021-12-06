@@ -2,9 +2,11 @@
 
 <h1 class="voice"><roundcube:object name="productname" /> <roundcube:label name="login" /></h1>
 
-<div id="layout-content" class="selected no-navbar" role="main">
-	<roundcube:object name="logo" src="/images/logo.svg" id="logo" alt="Logo" />
-	<roundcube:form id="login-form" name="login-form" method="post" class="propform">
+<div id="layout-content" class="selected no-navbar mykmail_login_main" role="main">
+	<img class="mykmail_login_logo"src="skins/elastic/images/login-logo.jpg" > 
+	<!-- <roundcube:object name="logo" src="/images/login-logo.jpg" id="logo" alt="Logo" class="mykloud_login_logo" /> -->
+	<div class="test">
+	<roundcube:form id="login-form" name="login-form" method="post" class="propform mykmail_login_form">
 	<roundcube:object name="loginform" form="login-form" size="40" submit=true class="form-control" />
 		<div id="login-footer" role="contentinfo">
 			<roundcube:object name="productname" condition="config:display_product_info &gt; 0" />
@@ -15,10 +17,41 @@
 			<roundcube:container name="loginfooter" id="login-footer" />
 		</div>
 	</form>
+    </div>
+
+
+
+
+	<div class="mykmail_login_footer">
+
+		<div class="mykmail_login_footer_Left">
+			<img class="mykmail_login_footer_Left_logo"src="/images/footer-logo.jpg" > 
+			<h4 class="mykmail_login_footer_Left_h4">Copyright © 2021. All rights reserved by myKloud Company.</h4>
+		</div>
+
+		<div class="mykmail_login_footer_Reight">
+			<div class="mykmail_login_footer_Reight_up">
+				<p class="mykmail_login_footer_Reight_up_p">Terms of Service</p>
+				<p class="mykmail_login_footer_Reight_up_p">Privacy Policy</p>
+				<p class="mykmail_login_footer_Reight_up_p">Contact Us</p>
+				<p class="mykmail_login_footer_Reight_up_p_mobile">Copyright © 2021. All rights reserved by myKloud Company.</p>
+			</div>
+			<div class="mykmail_login_footer_Reight_down">
+				<p class="mykmail_login_footer_Reight_down_p">Join our community</p>
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURUdwTBRwzwOp9Btz0Rhzzxtz0Rtz0Rpy0Rpz0Rpy0f///930/vD5/kW/97jn/JHZ+ya19hOu9WnM+Mbc83Cn4o256FSW3Mbc9IHU+gr+QSUAAAAKdFJOUwAQ//8gv99wz9+O7klnAAAA50lEQVQ4y82USRKEIAxFIw4gBFDE4f4nbSesVoO46ar+y9SDhCR8AMh4mUclOCwqqqFDGVPnq2KGql4+qq8y4F4mNHAQXQrqSshTjMT8BST/A1IYgdQRtC1jWqFRd6gJMctWtRpvkGKt3ekNYtreIJzDbrnM7AybiJr0dtocEFG4MiHNroaCWHuGtIyl+5Ij+3RJZ8iOG02XdIJs5KLz7BxZ0XXAxhHJLhBOoQs6sgXGHa8LQ6RaYPU2fIvPS6cU/nrH8QVUJr/5KIAPKchzyOqU9dSLidV+jJvFONTF6nVcxO2w5BnABzvtK8U7zA+uAAAAAElFTkSuQmCC">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURUdwTApmwhtz0f///xhzzxRwzxtz0Rpz0Rty0Bpy0cXb8it6y+bw+WWf2YSy4VCT16fI6XKn4Y+65x1VwxcAAAAKdFJOUwD///8gEL/aX4D8SubQAAAAtklEQVQ4y+3UwRLEEAwG4KgS0mjw/g+7tLOzeyhx2OP+By7fEIYAgIt+GwYD9OwoxHYUKrg3hNVOU9FBKFaJREDSEHnYNGN5W0D2g1iMsIYOY0zRUDNGNCQNnWpN6TjVwpdORznndq9tzJZrkkIPKN019UNSH74qfES3aXiG3knTlcjyNc9Qf2C5LzUtvF/bHz2jpafyA8QLyOvfHCGKhkoAp7eeq4mV8Y5McjUxgIDjduijA3gB0WkSiiVDXqwAAAAASUVORK5CYII=" >
+			</div>
+		</div>
+
+
+
+
+	</div>
 </div>
 
 <noscript>
 	<p class="noscriptwarning"><roundcube:label name="noscriptwarning" /></p>
 </noscript>
-
 <roundcube:include file="includes/footer.html" />
+
+
