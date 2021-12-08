@@ -2372,9 +2372,16 @@ EOF;
 
         $table->add('title', html::label('rcmloginuser', html::quote($this->app->gettext('username'))));
         $table->add('input', $input_user->show(rcube_utils::get_input_value('_user', rcube_utils::INPUT_GPC)));
+        
+        
+
+
+
 
         $table->add('title', html::label('rcmloginpwd', html::quote($this->app->gettext('password'))));
         $table->add('input', $input_pass->show());
+      
+
 
         // add host selection row
         if (is_object($input_host) && !$hide_host) {

@@ -2,20 +2,30 @@
 
 <h1 class="voice"><roundcube:object name="productname" /> <roundcube:label name="login" /></h1>
 
+
 <div id="layout-content" class="selected no-navbar mykmail_login_main" role="main">
 	<img class="mykmail_login_logo"src="skins/elastic/images/login-logo.jpg" > 
+	<img class="mykmail_login_logo-mob"src="skins/elastic/images/login-logo-mob.png" > 
+	<div class="mykmail_login_register_btn_container">
+		<p class="mykmail_login_register_btn_p">Don’t have an account?</p>
+		<button class="mykmail_login_register_btn_container_btn">Register</button>
+	</div>
+	<h2 class="mykmail_login_title_h2">Login to your account</h2>
+	<p class="mykmail_login_title_p">Enter your username</p>
 	<!-- <roundcube:object name="logo" src="/images/login-logo.jpg" id="logo" alt="Logo" class="mykloud_login_logo" /> -->
 	<div class="test">
 	<roundcube:form id="login-form" name="login-form" method="post" class="propform mykmail_login_form">
 	<roundcube:object name="loginform" form="login-form" size="40" submit=true class="form-control" />
-		<div id="login-footer" role="contentinfo">
+	<p class="mykmail_login_forgot_message">Forgot your username?</p>
+	<p class="mykmail_login_forgot_message">Forgot your password?</p>
+		<!-- <div id="login-footer" role="contentinfo">
 			<roundcube:object name="productname" condition="config:display_product_info &gt; 0" />
 			<roundcube:object name="version" condition="config:display_product_info == 2" />
 			<roundcube:if condition="config:support_url" />
 				&nbsp;&bull;&nbsp; <a href="<roundcube:var name='config:support_url' />" target="_blank" class="support-link"><roundcube:label name="support" /></a>
 			<roundcube:endif />
 			<roundcube:container name="loginfooter" id="login-footer" />
-		</div>
+		</div> -->
 	</form>
     </div>
 

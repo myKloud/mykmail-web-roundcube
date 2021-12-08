@@ -1,44 +1,104 @@
 body.task-login {
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     color: #1b1616;
-    font-family: "Poppins";
     font-size: 18px;
     line-height: 1.56;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
+    font-family:Poppins;
 }
 
 
 
+#layout > .mykmail_login_main{
+    background-image: url(../images/background.png)!important;
+    background-repeat: no-repeat;
+  background-size: auto;
+}
+
 .mykmail_login_main{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }
 
 .mykmail_login_logo{
     position: absolute;
-    width: 200px!important;
+    width: 150px!important;
     left: 3%;
     top : 2%;
-    margin-bottom: 20%;
+}
+
+.mykmail_login_title_h2{
+    position: absolute;
+    top : 20%;
+    left: 39%;
+    z-index: 10;
+    color: #1b1616;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mykmail_login_title_p{
+    position: absolute;
+    top : 25%;
+    left: 44%;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #45536c;
+}
+
+.mykmail_login_logo-mob{
+    display: none;
+}
+
+.mykmail_login_register_btn_container{
+    position: absolute;
+    right: 3%;
+    top : 2%;
+    display: flex ;
+    justify-content : flex-end;
+    align-items: center;
+    width: 50%;
 }
 
 
+.mykmail_login_register_btn_p{
+    margin: 0 3% 0 0 ;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #45536c;
+}
+
+.mykmail_login_register_btn_container_btn{
+    width: 120px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #fff!important;
+    border: 1px solid #1b73d1!important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    color: #1b73d1!important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mykmail_login_register_btn_container_btn:hover{
+    background-color: #1b73d1!important;
+    color: #fff!important;
+}
+
 
 #login-form.mykmail_login_form{
-    top: 20vh;
+    top: 14vh;
     width: 95%;
-    max-width: 600px;
+    max-width: 700px;
     position: relative;
-    padding: 8rem;
+    padding: 9rem 7rem 6rem 7rem;
     background-color: white;
     border: 1px solid gray;
-    background-color: #fff;
     margin: auto;
     border: 1px solid #dcdce7;
     border-radius: 6px;
@@ -52,7 +112,7 @@ body.task-login {
     background-color : #292d45 ;
     display:flex;
     justify-content: space-between;
-    padding :20px 40px;
+    padding :23px 40px;
     align-items: center;
 
 }
@@ -60,7 +120,6 @@ body.task-login {
 .mykmail_login_footer_Left{
     display : flex;
     flex-direction :column;
-    
     height : 70%;
 
 }
@@ -68,17 +127,12 @@ body.task-login {
 .mykmail_login_footer_Left_logo{
     width : 220px !important;
     margin-bottom: 4%;
-    
-
 }
-
-
-
 
 
 .mykmail_login_footer_Left_h4{
     color : white;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 200;
     margin : 0;
 
@@ -86,15 +140,12 @@ body.task-login {
 
 
 .mykmail_login_footer_Reight{
-   
-    width : 25%;
+    width : 30%;
     display: flex;
     flex-direction: column;
-
 }
 
 .mykmail_login_footer_Reight_up{
-  
     display : flex;
 }
 
@@ -103,15 +154,22 @@ body.task-login {
  font-size: 16px;
  line-height: 1.75;
  font-weight: 400;
- margin-right: 4%;
+ margin-right: 6%;
+}
+
+
+.mykmail_login_footer_Reight_up_p:hover{
+    color : rgb(48, 80, 223);
+    cursor: pointer;
+
 }
 
 .mykmail_login_footer_Reight_down{
- 
     display : flex;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    margin-top: 5px;
+    gap: 3%;
 }
 
 .mykmail_login_footer_Reight_down_p{
@@ -123,47 +181,185 @@ body.task-login {
  margin : 0;
 }
 
+.mykmail_login_footer_Reight_down_p:hover{
+    color : rgb(48, 80, 223);
+    cursor: pointer;
+
+}
+
 .mykmail_login_footer_Reight_up_p_mobile{
     display : none;
 }
 
 .task-login #layout-content.mykmail_login_main{
     display : flex ;
+}
+
+.mykmail_login_forgot_message{
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #1565d8;   
+}
+
+#rcmloginuser.mykmail_login_input{
+    width: 100%!important;
+    height: 56px!important;
+    padding: 0 16px!important;
+    border-radius: 6px!important;
+    border: 1px solid #dcdce7!important;
+    background-color: #fff!important;
+    font-family: "Open Sans"!important;
+    font-size: 14px!important;
+    font-weight: 600!important;
+    color: #1b1616!important;
+    outline: none!important;
+}
+
+#rcmloginuser.mykmail_login_input:focus:focus-within{
+    border: 1px solid #445da7!important;
+}
+
+#rcmloginpwd.mykmail_login_input{
+    width: 100%!important;
+    height: 56px!important;
+    padding: 0 16px!important;
+    border-radius: 6px!important;
+    border: 1px solid #dcdce7!important;
+    background-color: #fff!important;
+    font-family: "Open Sans"!important;
+    font-size: 14px!important;
+    font-weight: 600!important;
+    color: #1b1616!important;
+    outline: none!important;
+}
+
+#rcmloginpwd.mykmail_login_input:focus:focus-within{
+    border: 1px solid #445da7!important;
+}
 
 
+
+#rcmloginsubmit.btn-primary{
+    height: 64px!important;
+    width: 100%!important;
+    border: none!important;
+    border-radius: 6px!important;
+    background-color: #1b73d1!important;
+    font-size: 16px!important;
+    font-weight: 500!important;
+    text-align: center!important;
+    color: #fff!important;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .mykmail_login_title_h2{
+       
+        top: 17vh;
+        left: 26vw;
+        
+    }
+    
+    .mykmail_login_title_p{
+        
+        top: 20vh;
+        left: 26vw;
+    }
+        
 
 }
 
 
 
+@media screen and (max-width:768px) {
 
-@media screen and (max-width:375px) {
+    #login-form.mykmail_login_form{
+        top: 22vh;
+        width: 95%;
+        max-width: 600px;
+        position: relative;
+        padding: 2rem;
+        background-color: #fff;
+        margin: auto;
+       border:none !important;
+    }
 
     
- .mykmail_login_form{
-    padding-top:30px;
- 
-  }
+    .mykmail_login_title_h2{
+        position: absolute;
+        top : 17vh;
+        left: 12%;
+        z-index: 10;
+        color: #1b1616;
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    
+    .mykmail_login_title_p{
+        position: absolute;
+        top : 21vh;
+        left: 12%;
+        z-index: 10;
+        font-size: 15px;
+        line-height: 1.56;
+        color: #45536c;
+    }
 
+    .mykmail_login_logo{
+        position: absolute;
+        width: 200px!important;
+        left: 3%;
+        top : 2%;
+        display: none;
+    }
+    
+    .mykmail_login_logo-mob{
+        position: absolute;
+        width: 65px!important;
+        left: 3%;
+        top : 2%;
+        display: block;  
+    }
 
-  #login-form.mykmail_login_form{
-    top: 20vh;
-    width: 95%;
-    max-width: 600px;
-    position: relative;
-    padding: 2rem;
-    background-color: #fff;
-    margin: auto;
-    border: 1px solid #dcdce7;
-    border-radius: 6px;
-}
+    .mykmail_login_forgot_message{
+        font-size: 13px;
+    }
+
+   
+    .mykmail_login_register_btn_p{
+        display: none;
+    }
+
+    .mykmail_login_register_btn_container{
+        width : auto;
+
+    }
+
+    .mykmail_login_register_btn_container_btn{
+        width: 84px;
+        font-size: 14px;
+        border: none!important;
+        cursor: pointer;
+        
+    }
+
+    .mykmail_login_register_btn_container_btn:hover{
+        color : rgb(27, 35, 146)!important;
+        background-color : rgb(255, 255, 255) !important;
+    }
+
 
     .mykmail_login_footer{
         width:100%;
         position: relative;
         display:flex;
         flex-direction : column;
-        padding :10px 20px;
+        padding :10px 16px;
     }
 
 
@@ -176,7 +372,7 @@ body.task-login {
     }
     
     .mykmail_login_footer_Left_logo{
-        width : 190px !important;
+        width : 175px !important;
         margin-bottom: 4%;
     }
     
@@ -184,40 +380,40 @@ body.task-login {
         display :none;
     }
 
-    .mykmail_login_footer_Reight_up_p_mobile{
-        display : block;
-        color : white;
-     font-size: 14px;
-     line-height: 1.75;
-     font-weight: 400;
-    }
+   
     
     
     .mykmail_login_footer_Reight{
         display: flex;
         flex-direction: column;
-       
         width :100%;
     
     }
-    
+
     .mykmail_login_footer_Reight_up{
         display: flex;
         flex-direction: column;
         justify-content:flex-start;
-        text-align: left;
-        
-
-       
+        text-align: left;  
     }
     
     .mykmail_login_footer_Reight_up_p{
      color : white;
      width :100%;
-     font-size: 16px;
+     font-size: 13px;
      line-height: 1.75;
      font-weight: 400;
      margin:1% 1%;
+    }
+
+
+    .mykmail_login_footer_Reight_up_p_mobile{
+        display : block;
+        color : white;
+        font-size: 13px;
+        line-height: 1.75;
+        font-weight: 400;
+        margin:1% 1%;
     }
     
     .mykmail_login_footer_Reight_down{
@@ -234,6 +430,23 @@ body.task-login {
      font-weight: 400;
      margin-right: 4%;
      margin : 0 10% 0 0 ;
+    }
+
+    #rcmloginuser.mykmail_login_input{
+        height: 6vh!important; 
+    }
+ 
+
+
+    #rcmloginpwd.mykmail_login_input{
+        height: 6vh!important; 
+    }
+
+
+
+    #rcmloginsubmit.btn-primary{
+        height: 7vh!important; 
+       
     }
 
     
