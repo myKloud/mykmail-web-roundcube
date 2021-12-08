@@ -255,17 +255,12 @@ body.task-login {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
+@media screen and (max-width: 1024px) {
     .mykmail_login_title_h2{
-       
         top: 17vh;
-        left: 26vw;
-        
+        left: 26vw;  
     }
-    
-    .mykmail_login_title_p{
-        
+    .mykmail_login_title_p{ 
         top: 20vh;
         left: 26vw;
     }
@@ -273,9 +268,21 @@ body.task-login {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mykmail_login_title_h2{
+        top: 17vh;
+        left: 26vw;  
+    }
+    .mykmail_login_title_p{ 
+        top: 21vh;
+        left: 36vw;
+    }
+ 
+}
 
 
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:767px) {
 
     #login-form.mykmail_login_form{
         top: 22vh;
@@ -283,7 +290,7 @@ body.task-login {
         max-width: 600px;
         position: relative;
         padding: 2rem;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0);
         margin: auto;
        border:none !important;
     }
