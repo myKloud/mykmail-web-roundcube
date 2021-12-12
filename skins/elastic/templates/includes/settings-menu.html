@@ -1,12 +1,38 @@
-<div id="layout-sidebar" class="listbox<roundcube:exp expression="!request:_action ? ' selected' : ''"/>" role="navigation" aria-labelledby="aria-label-settingstabs">
+<div id="layout-sidebar" class="listbox<roundcube:exp expression=" !request:_action ? ' selected' : ''"/>"
+	role="navigation" aria-labelledby="aria-label-settingstabs">
 	<div class="header">
-		<a class="button icon task-menu-button" href="#menu"><span class="inner"><roundcube:label name="menu" /></span></a>
-		<span id="aria-label-settingstabs" class="header-title"><roundcube:label name="settings" /></span>
+		<a class="button icon task-menu-button" href="#menu"><span class="inner">
+				<roundcube:label name="menu" />
+			</span></a>
+		<span id="aria-label-settingstabs" class="header-title">
+			<roundcube:label name="settings" />
+		</span>
 	</div>
 	<div class="scroller">
-		<ul id="settings-menu" class="listing iconized settings-default-icon<roundcube:exp expression="!request:_action ? ' selection-large-only' : ''"/>">
+		<ul id="settings-menu" class="listing iconized settings-default-icon<roundcube:exp expression=" !request:_action
+			? ' selection-large-only' : ''"/>">
 			<roundcube:object name="settingstabs" class="listitem" tagname="li" />
 			<roundcube:container name="tabs" id="settings-menu" />
+			<!-- <div
+			id="taskmenu"
+			class="menu toolbar"
+			role="navigation"
+			aria-labelledby="aria-label-tasknav"
+		  > -->
+			<li class="listitem dark-theme" id="settingsdarktheme">
+				<roundcube:if condition="config:dark_mode_support" />
+				<roundcube:add_label name="darkmode" />
+				<roundcube:add_label name="lightmode" />
+				<roundcube:button name="theme" label="darkmode" type="link" innerClass="inner" class="theme dark" />
+				<roundcube:endif />
+			</li>
+			<li class="listitem abous-us" id="settingsaboutus">
+				<roundcube:button name="about" label="about" type="link" class="about" innerClass="inner"
+					onclick="UI.about_dialog(this)" />
+			</li>
+
+
+			<!-- </div> -->
 		</ul>
 	</div>
 </div>
