@@ -13,6 +13,8 @@ body.task-login {
 
 #layout > .mykmail_login_main{
     background-image: url(../images/background.png)!important;
+    background-color: #f7fcff9f!important;
+    width : 100%!important;
     background-repeat: no-repeat;
   background-size: auto;
 }
@@ -42,7 +44,7 @@ body.task-login {
 .mykmail_login_title_p{
     position: absolute;
     top : 25%;
-    left: 44%;
+    left: 40%;
     z-index: 10;
     font-size: 18px;
     line-height: 1.56;
@@ -275,7 +277,7 @@ body.task-login {
     }
     .mykmail_login_title_p{ 
         top: 21vh;
-        left: 36vw;
+        left: 29vw;
     }
  
 }

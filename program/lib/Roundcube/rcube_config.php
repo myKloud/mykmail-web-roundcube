@@ -376,6 +376,7 @@ class rcube_config
      */
     public function get($name, $def = null)
     {
+        
         if (isset($this->prop[$name])) {
             $result = $this->prop[$name];
         }

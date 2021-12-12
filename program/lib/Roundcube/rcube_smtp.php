@@ -147,6 +147,8 @@ class rcube_smtp
         // try to connect to server and exit on failure
         $result = $this->conn->connect($CONFIG['smtp_timeout']);
 
+        
+
         if (is_a($result, 'PEAR_Error')) {
             $this->response[] = "Connection failed: " . $result->getMessage();
 
@@ -430,6 +432,8 @@ class rcube_smtp
      */
     public function get_response()
     {
+        //Omarzz
+        // echo '<script>alert("Welcome to Geeks for Geeks")</script>';
          return $this->response;
     }
 

@@ -1575,7 +1575,7 @@ class rcmail_action_settings_index extends rcmail_action
             ['action' => 'preferences', 'type' => 'link', 'label' => 'preferences', 'title' => 'editpreferences'],
             ['action' => 'folders',     'type' => 'link', 'label' => 'folders',     'title' => 'managefolders'],
             ['action' => 'identities',  'type' => 'link', 'label' => 'identities',  'title' => 'manageidentities'],
-            ['action' => 'responses',   'type' => 'link', 'label' => 'responses',   'title' => 'manageresponses'],
+            ['action' => 'responses',   'type' => 'link', 'label' => 'responses',   'title' => 'manageresponses'],  
         ];
 
         $disabled_actions = (array) $rcmail->config->get('disabled_actions');

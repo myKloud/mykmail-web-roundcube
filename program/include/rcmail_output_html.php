@@ -2558,7 +2558,8 @@ EOF;
             );
         }
 
-        return $out;
+        // return $out;
+        // edit by omar
     }
 
     /**

@@ -1164,7 +1164,7 @@ abstract class rcmail_action
             $subFolders    = substr($folder, $pos+1);
             $currentFolder = substr($folder, 0, $pos);
 
-            // sometimes folder has a delimiter as the last character
+            // sometimes folder has a delimiter as the last character omar back
             if (!strlen($subFolders)) {
                 $virtual = false;
             }

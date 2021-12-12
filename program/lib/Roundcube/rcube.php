@@ -1766,6 +1766,7 @@ class rcube
         // send message
         $sent     = $this->smtp->send_mail($from, $a_recipients, $smtp_headers, $msg_body, $options);
         $response = $this->smtp->get_response();
+        
         $error    = $this->smtp->get_error();
 
         if (!$sent) {
