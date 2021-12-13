@@ -96,13 +96,13 @@ class rcmail_action_settings_index extends rcmail_action
         $rcmail = rcmail::get_instance();
 
         $sections['general']     = ['id' => 'general', 'section' => $rcmail->gettext('uisettings')];
-        $sections['mailbox']     = ['id' => 'mailbox', 'section' => $rcmail->gettext('mailboxview')];
+        // $sections['mailbox']     = ['id' => 'mailbox', 'section' => $rcmail->gettext('mailboxview')];
         $sections['mailview']    = ['id' => 'mailview','section' => $rcmail->gettext('messagesdisplaying')];
         $sections['compose']     = ['id' => 'compose', 'section' => $rcmail->gettext('messagescomposition')];
         $sections['addressbook'] = ['id' => 'addressbook','section' => $rcmail->gettext('contacts')];
-        $sections['folders']     = ['id' => 'folders', 'section' => $rcmail->gettext('specialfolders')];
+        // $sections['folders']     = ['id' => 'folders', 'section' => $rcmail->gettext('specialfolders')] edit by omar;
         $sections['server']      = ['id' => 'server',  'section' => $rcmail->gettext('serversettings')];
-        $sections['encryption']  = ['id' => 'encryption', 'section' => $rcmail->gettext('encryption')];
+        // $sections['encryption']  = ['id' => 'encryption', 'section' => $rcmail->gettext('encryption')];
 
         // hook + define list cols
         $plugin = $rcmail->plugins->exec_hook('preferences_sections_list', [
@@ -187,10 +187,10 @@ class rcmail_action_settings_index extends rcmail_action
                         $select->add('(GMT ' . $offset . ') ' . self::timezone_label($tzs), $tzs);
                     }
 
-                    $blocks['main']['options']['timezone'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('timezone'))),
-                        'content' => $select->show((string)$config['timezone']),
-                    ];
+                    // $blocks['main']['options']['timezone'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('timezone'))),
+                    //     'content' => $select->show((string)$config['timezone']),
+                    // ];
                 }
 
                 // date/time formatting
@@ -257,10 +257,10 @@ class rcmail_action_settings_index extends rcmail_action
                             'value' => 1
                     ]);
 
-                    $blocks['main']['options']['prettydate'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('prettydate'))),
-                        'content' => $input->show($config['prettydate']?1:0),
-                    ];
+                    // $blocks['main']['options']['prettydate'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('prettydate'))),
+                    //     'content' => $input->show($config['prettydate']?1:0),
+                    // ];
                 }
 
                 // "display after delete" checkbox
@@ -276,10 +276,10 @@ class rcmail_action_settings_index extends rcmail_action
                             'value' => 1
                     ]);
 
-                    $blocks['main']['options']['display_next'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('displaynext'))),
-                        'content' => $input->show($config['display_next']?1:0),
-                    ];
+                    // $blocks['main']['options']['display_next'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('displaynext'))),
+                    //     'content' => $input->show($config['display_next']?1:0),
+                    //  edit by omar ];
                 }
 
                 if (!isset($no_override['refresh_interval'])) {
@@ -302,10 +302,10 @@ class rcmail_action_settings_index extends rcmail_action
                         }
                     }
 
-                    $blocks['main']['options']['refresh_interval'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('refreshinterval'))),
-                        'content' => $select->show($config['refresh_interval']/60),
-                    ];
+                    // $blocks['main']['options']['refresh_interval'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('refreshinterval'))),
+                    //     'content' => $select->show($config['refresh_interval']/60),
+                    // ];
                 }
 
                 // show drop-down for available skins
@@ -448,10 +448,10 @@ class rcmail_action_settings_index extends rcmail_action
                         $select->add($label, $sec);
                     }
 
-                    $blocks['main']['options']['mail_read_time'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('automarkread'))),
-                        'content' => $select->show($config['mail_read_time']),
-                    ];
+                    // $blocks['main']['options']['mail_read_time'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('automarkread'))),
+                    //     'content' => $select->show($config['mail_read_time']),
+                    // ] edit by omar;
                 }
 
                 if (!isset($no_override['autoexpand_threads'])) {
@@ -538,10 +538,10 @@ class rcmail_action_settings_index extends rcmail_action
                     $field_id = 'rcmfd_message_extwin';
                     $input    = new html_checkbox(['name' => '_message_extwin', 'id' => $field_id, 'value' => 1]);
 
-                    $blocks['main']['options']['message_extwin'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('showinextwin'))),
-                        'content' => $input->show($config['message_extwin']?1:0),
-                    ];
+                    // $blocks['main']['options']['message_extwin'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('showinextwin'))),
+                    //     'content' => $input->show($config['message_extwin']?1:0),
+                    // ];
                 }
 
                 // show checkbox to show email instead of name
@@ -553,10 +553,10 @@ class rcmail_action_settings_index extends rcmail_action
                     $field_id = 'rcmfd_message_show_email';
                     $input    = new html_checkbox(['name' => '_message_show_email', 'id' => $field_id, 'value' => 1]);
 
-                    $blocks['main']['options']['message_show_email'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('showemail'))),
-                        'content' => $input->show($config['message_show_email']?1:0),
-                    ];
+                    // $blocks['main']['options']['message_show_email'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('showemail'))),
+                    //     'content' => $input->show($config['message_show_email']?1:0),
+                    // ];
                 }
 
                 // show checkbox for HTML/plaintext messages
@@ -573,10 +573,10 @@ class rcmail_action_settings_index extends rcmail_action
                             'onchange' => "$('#rcmfd_show_images').prop('disabled', !this.checked).val(0)"
                     ]);
 
-                    $blocks['main']['options']['prefer_html'] = [
-                        'title'   => html::label($field_id, rcube::Q($rcmail->gettext('preferhtml'))),
-                        'content' => $input->show($config['prefer_html']?1:0),
-                    ];
+                    // $blocks['main']['options']['prefer_html'] = [
+                    //     'title'   => html::label($field_id, rcube::Q($rcmail->gettext('preferhtml'))),
+                    //     'content' => $input->show($config['prefer_html']?1:0),
+                    // ];
                 }
 
                 if (!isset($no_override['default_charset'])) {

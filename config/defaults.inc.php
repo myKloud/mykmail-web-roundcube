@@ -1242,7 +1242,8 @@ $config['skins_allowed'] = [];
 $config['standard_windows'] = false;
 
 // show up to X items in messages list view
-$config['mail_pagesize'] = 50;
+$config['mail_pagesize'] = 100;
+// edit by omar
 
 // show up to X items in contacts list view
 $config['addressbook_pagesize'] = 50;
@@ -1283,8 +1284,8 @@ $config['compose_extwin'] = false;
 //  1 - always,
 //  2 - on reply to HTML message,
 //  3 - on forward or reply to HTML message
-//  4 - always, except when replying to plain text message
-$config['htmleditor'] = 0;
+//  4 - always, except when replying to plain text message edit by omar
+$config['htmleditor'] = 1;
 
 // save copies of compose messages in the browser's local storage
 // for recovery in case of browser crashes and session timeout.
@@ -1294,7 +1295,7 @@ $config['compose_save_localstorage'] = true;
 $config['prettydate'] = true;
 
 // save compose message every 300 seconds (5min)
-$config['draft_autosave'] = 300;
+$config['draft_autosave'] = 5;
 
 // Interface layout. Default: 'widescreen'.
 //  'widescreen' - three columns
@@ -1339,7 +1340,8 @@ $config['flag_for_deletion'] = false;
 $config['refresh_interval'] = 60;
 
 // If true all folders will be checked for recent messages
-$config['check_all_folders'] = false;
+$config['check_all_folders'] = true;
+// edit by omar
 
 // If true, after message/contact delete/move, the next message/contact will be displayed
 $config['display_next'] = true;
@@ -1355,9 +1357,9 @@ $config['autoexpand_threads'] = 0;
 // When replying:
 // -1 - don't cite the original message
 // 0  - place cursor below the original message
-// 1  - place cursor above original message (top posting)
+// 1  - place cursor above original message (top posting) edit by omar
 // 2  - place cursor above original message (top posting), but do not indent the quote
-$config['reply_mode'] = 0;
+$config['reply_mode'] = 1;
 
 // When replying strip original signature from message
 $config['strip_existing_sig'] = true;
@@ -1413,7 +1415,7 @@ $config['dsn_default'] = 0;
 // Place replies in the folder of the message being replied to
 $config['reply_same_folder'] = false;
 
-// Sets default mode of Forward feature to "forward as attachment"
+// Sets default mode of Forward feature to "forward as attachment edit by omar"
 $config['forward_attachment'] = false;
 
 // Defines address book (internal index) to which new contacts will be added
@@ -1437,7 +1439,8 @@ $config['default_font'] = 'Verdana';
 $config['default_font_size'] = '10pt';
 
 // Enables display of email address with name instead of a name (and address in title)
-$config['message_show_email'] = false;
+$config['message_show_email'] = true;
+// edit by omar
 
 // Default behavior of Reply-All button:
 // 0 - Reply-All always

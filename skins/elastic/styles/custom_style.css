@@ -6,6 +6,32 @@
   content: "\f185";
 }
 
+
+#settingsAccount > a:before {
+  content: "\f2bd";
+}
+
+#setup_myKloud > a:before {
+  content: "\f019";
+}
+
+
+#Legal_myKloud > a:before {
+  content: "\f24e";
+}
+
+#FAQs_myKloud > a:before {
+  content: "\f128";
+}
+
+#ContactUs_myKloud  > a:before {
+  content: "\f0e0";
+}
+
+
+
+
+
 body.task-login {
   color: #1b1616;
   font-size: 18px;

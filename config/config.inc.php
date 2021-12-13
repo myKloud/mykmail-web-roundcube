@@ -122,6 +122,8 @@ $config['enable_installer'] = false;
 
 $config['support_url'] = 'https://mykloud.io';
 
+$config['prettydate'] = true;
+
 // This key is used for encrypting purposes, like storing of imap password
 
 // in the session. For historical reasons it's called DES_key, but it's used

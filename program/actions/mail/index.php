@@ -1410,7 +1410,7 @@ class rcmail_action_mail_index extends rcmail_action
                 if ($linked) {
                     $attrs = [
                         'href'    => 'mailto:' . $mailto,
-                        'class'   => 'rcmContactAddress',
+                        // 'class'   => 'rcmContactAddress',
                         'onclick' => sprintf("return %s.command('compose','%s',this)",
                             rcmail_output::JS_OBJECT_NAME, rcube::JQ(format_email_recipient($mailto, $name))),
                     ];
